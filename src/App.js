@@ -168,22 +168,20 @@ function App() {
           <Route
             path="/"
             exact={true}
-            render={(props) => {
-              return (
-                <>
-                  {displayAddTask && <AddTask onAdd={addTask} />}
-                  {tasks.length > 0 ? (
-                    <Tasks
-                      tasks={tasks}
-                      onDelete={deleteTask}
-                      onToggle={toggleReminder}
-                    />
-                  ) : (
-                    'No tasks available. Click the "Add More" button to add tasks.'
-                  )}
-                </>
-              );
-            }}
+            element={
+              <>
+                {displayAddTask && <AddTask onAdd={addTask} />}
+                {tasks.length > 0 ? (
+                  <Tasks
+                    tasks={tasks}
+                    onDelete={deleteTask}
+                    onToggle={toggleReminder}
+                  />
+                ) : (
+                  'No tasks available. Click the "Add More" button to add tasks.'
+                )}
+              </>
+            }
           />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
