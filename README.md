@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React: Task Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple task tracker built with React.js to keep track of your daily to-do list of tasks. Credit to [Brad Traversy](https://github.com/bradtraversy) who made a tutorial on this on his [YouTube channel](https://www.youtube.com/watch?v=w7ejDZ8SWv8). This is officialy a start of my React.js journey.
 
 ## Available Scripts
 
